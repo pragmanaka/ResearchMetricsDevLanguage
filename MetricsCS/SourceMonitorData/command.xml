@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="shift_jis" ?>
+<!-- ファイルエンコードはsjisでないと2byte文字が解釈できない！ -->
+<sourcemonitor_commands>
+	<write_log>true</write_log>
+	<command>
+		<project_file>product.smproj</project_file>
+		<project_language>C#</project_language>
+		<modified_complexity>false</modified_complexity>
+		<source_directory>..\..\MetricsCS</source_directory>
+		<source_subdirectory_list>
+			<!-- ===============================================================
+			計測対象外にするディレクトリを指定
+			exclude_subdirectories :  trueで計測対象外にします
+			source_subtree : 指定ディレクトリとその配下まで対象外にします
+			source_subdirectory : 指定ディレクトリのみ対象外にします。
+			※source_directoryからのディレクトリです
+			================================================================ -->
+			<exclude_subdirectories>true</exclude_subdirectories>
+			<source_subtree>bin\</source_subtree>
+			<source_subtree>obj\</source_subtree>
+			<source_subtree>Properties\</source_subtree>
+		</source_subdirectory_list>
+		<!-- ソースコードのファイルエンコードがUTF8ならtrueにする（C#ならtrue） -->
+		<parse_utf8_files>true</parse_utf8_files>
+		<file_extensions>*.cs|*.Designer.cs,*AssemblyInfo.cs</file_extensions>
+		<include_subdirectories>true</include_subdirectories>
+	</command>
+</sourcemonitor_commands>
