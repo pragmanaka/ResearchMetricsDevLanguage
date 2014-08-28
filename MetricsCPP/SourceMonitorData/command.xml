@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="shift_jis" ?>
+<!-- ファイルエンコードはsjisでないと2byte文字が解釈できない！ -->
+<sourcemonitor_commands>
+	<write_log>true</write_log>
+	<command>
+		<project_file>product.smproj</project_file>
+		<project_language>C++</project_language>
+		<modified_complexity>false</modified_complexity>
+		<source_directory>..\..\MetricsCPP</source_directory>
+		<!-- ソースコードのファイルエンコードがUTF8ならtrueにする（C#ならtrue） -->
+		<parse_utf8_files>false</parse_utf8_files>
+		<file_extensions>*.h,*.cpp</file_extensions>
+		<include_subdirectories>true</include_subdirectories>
+	</command>
+</sourcemonitor_commands>
